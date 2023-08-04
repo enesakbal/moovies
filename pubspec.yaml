@@ -40,7 +40,9 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
+  assets:
+      - .env
+      - .env.development
 
 flutter_gen:
   output: lib/src/config/gen/
