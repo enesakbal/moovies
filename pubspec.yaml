@@ -29,6 +29,7 @@ dev_dependencies:
   auto_route_generator: ^7.3.0
   bloc_test: ^9.1.4
   build_runner: ^2.4.6
+  flutter_gen_runner: ^5.3.1
   flutter_lints: ^2.0.0
   flutter_test:
     sdk: flutter
@@ -39,3 +40,28 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+
+flutter_gen:
+  output: lib/src/config/gen/
+  inputs:
+    # - assets/images/
+    # - assets/icons/
+    - assets/colors/
+  
+  integrations:
+    flutter_svg: true
+
+  colors:
+    enabled: true
+    outputs:
+      class_name: AppColors
+    inputs:
+      - assets/colors/colors.xml
+
+
+# flutter_launcher_icons:
+#   android: "launcher_icon"
+#   ios: true
+#   image_path: "assets/icons/app_icon.png"
+#   min_sdk_android: 21 # android min sdk min:16, default 21
