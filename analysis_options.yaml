@@ -4,21 +4,8 @@ analyzer:
     strict-raw-types: true
   errors:
     deprecated_member_use_from_same_package: ignore
-#   exclude:
-#     - "bin/cache/**"
-#       # Ignore protoc generated files
-#     - "**/*.g.dart"
-#     - "**/*.gen.dart"
-#     - "**/*.gr.dart"
-#     - "dev/conductor/lib/proto/*"
-#     - test/data/datasources/*
-#     - test/model/**
-#     - test/domain/repositories/**
-#     - test/**/examples/**
-#     - clean/
-#     - "/test_local/**"
-#     - bricks/
-
+  exclude:  
+    - "**/*.mocks.dart"
 
 
 linter:
