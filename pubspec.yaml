@@ -38,18 +38,12 @@ dev_dependencies:
   mockito: ^5.4.2
   mocktail: ^1.0.0
 
-flutter:
-  uses-material-design: true
-  assets:
-      - assets/icons/
-      - .env
-      - .env.development
-
 flutter_gen:
   output: lib/src/config/gen/
   inputs:
     - assets/colors/
     - assets/icons/
+    - assets/fonts/
   
   integrations:
     flutter_svg: true
@@ -60,6 +54,35 @@ flutter_gen:
       class_name: AppColors
     inputs:
       - assets/colors/colors.xml
+
+
+flutter:
+  uses-material-design: true
+  assets:
+      - assets/icons/
+      - .env
+      - .env.development
+
+  fonts:
+    - family: Apercu
+      fonts:
+        - asset: assets/fonts/Apercu Pro Bold.otf
+        - asset: assets/fonts/Apercu Pro Bold Italic.otf
+          style: italic
+        
+        - asset: assets/fonts/Apercu Pro Regular.otf
+        - asset: assets/fonts/Apercu Pro Italic.otf
+          style: italic
+
+        - asset: assets/fonts/Apercu Pro Light.otf
+        - asset: assets/fonts/Apercu Pro Light Italic.otf
+          style: italic
+
+        - asset: assets/fonts/Apercu Pro Medium.otf
+        - asset: assets/fonts/Apercu Pro Medium Italic.otf
+          style: italic
+
+        - asset: assets/fonts/Apercu Pro Mono.otf
 
 
 # flutter_launcher_icons:
