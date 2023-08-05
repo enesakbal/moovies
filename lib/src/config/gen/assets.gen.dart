@@ -23,8 +23,11 @@ class $AssetsIconsGen {
   /// File path: assets/icons/search.svg
   SvgGenImage get search => const SvgGenImage('assets/icons/search.svg');
 
+  /// File path: assets/icons/star.svg
+  SvgGenImage get star => const SvgGenImage('assets/icons/star.svg');
+
   /// List of all assets
-  List<SvgGenImage> get values => [code, error, search];
+  List<SvgGenImage> get values => [code, error, search, star];
 }
 
 class Assets {
