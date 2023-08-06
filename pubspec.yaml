@@ -7,37 +7,100 @@ environment:
   sdk: '>=3.0.5 <4.0.0'
 
 dependencies:
+  #* for routing
   auto_route: ^7.8.0
+
+  #* for architecture
   dartz: ^0.10.1
+
+  #* for responsive
+  device_preview: ^1.1.0
+
+  #* for http request
   dio: ^5.3.2
   dio_smart_retry: ^5.0.0
+
+  #* for equality
   equatable: ^2.0.5
+
+  #* for network images
   extended_image: ^8.0.2
+
   flutter:
     sdk: flutter
+
+  #* for state managment
   flutter_bloc: ^8.1.3
+
+  #* for environments
   flutter_dotenv: ^5.1.0
+
+  #* for dont use stateful widget and good funcs
   flutter_hooks: ^0.20.0
+
+  #* for app icon
+  flutter_launcher_icons: ^0.13.1
+
+  #* for responsive
   flutter_screenutil: ^5.8.4
+
+  #* for svg files
   flutter_svg: ^2.0.7
+
+  #* for dependency injection
   get_it: ^7.6.0
+
+  #* for models
   json_serializable: ^6.7.1
+
+  #* for custom logging
   logging: ^1.2.0
-  pretty_dio_logger: ^1.3.1
+
+  #* for bloc debouncetime
+  rxdart: ^0.27.7
+
+  #* for open web
+  url_launcher: ^6.1.12
 
 dev_dependencies:  
+
+  #* for auto_route generate
   auto_route_generator: ^7.3.0
+
+  #* for bloc test
   bloc_test: ^9.1.4
+
+  #* runner
   build_runner: ^2.4.6
+
+  #* for flutter gen generate
   flutter_gen_runner: ^5.3.1
+
+  #* for lints
   flutter_lints: ^2.0.0
+
+  
   flutter_test:
     sdk: flutter
+
+  #* for test
   http_mock_adapter: ^0.4.4
+
+  #* for json models
   json_annotation: ^4.8.1
+
+  #* for test
   mockito: ^5.4.2
+
+  #* for test
   mocktail: ^1.0.0
 
+
+  #* for http requests and response
+  pretty_dio_logger: ^1.3.1
+
+
+#* for assets, colors, and fonts
 flutter_gen:
   output: lib/src/config/gen/
   inputs:
@@ -85,8 +148,9 @@ flutter:
         - asset: assets/fonts/Apercu Pro Mono.otf
 
 
-# flutter_launcher_icons:
-#   android: "launcher_icon"
-#   ios: true
-#   image_path: "assets/icons/app_icon.png"
-#   min_sdk_android: 21 # android min sdk min:16, default 21
+#* for app icon
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
